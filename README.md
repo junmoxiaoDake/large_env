@@ -6,7 +6,7 @@
 git clone https://github.com/junmoxiaoDake/large_env.git
 ```
 
-安装SMAC_Large步骤：
+##安装SMAC_Large步骤：
 ```python
 cd smac_large
 ```
@@ -26,7 +26,7 @@ export SC2PATH="/data/zpq/StarCraftII" #其中的/data/zpq/StarCraftII为当前�
 python -m smac.bin.map_list 
 ```
 
-安装GF_Large步骤：
+##安装GF_Large步骤：
 
 首先需要安装如下的环境依赖包
 ```python
@@ -62,3 +62,26 @@ python3 -m pip install .
 ```python
 python3 -m gfootball.play_game --action_set=full
 ```
+
+##安装NMMO_Large步骤：
+
+```python
+cd nmmo_large
+bash scripts/setup/setup.sh
+python setup.py
+```
+
+测试运行：
+
+```python
+python Forge.py --render #Run the environment with rendering on
+```
+
+采用不同的模式进行运行：
+
+```python
+# Run Options:
+python Forge.py --nRealm 2 --api native #Run 2 environments with native API
+python Forge.py --nRealm 2 --api vecenv #Run 2 environments with vecenv API
+```
+
