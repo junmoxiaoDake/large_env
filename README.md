@@ -26,3 +26,39 @@ export SC2PATH="/data/zpq/StarCraftII" #其中的/data/zpq/StarCraftII为当前�
 python -m smac.bin.map_list 
 ```
 
+安装GF_Large步骤：
+
+首先需要安装如下的环境依赖包
+```python
+
+#linux系统
+sudo apt-get install git cmake build-essential libgl1-mesa-dev libsdl2-dev \
+libsdl2-image-dev libsdl2-ttf-dev libsdl2-gfx-dev libboost-all-dev \
+libdirectfb-dev libst-dev mesa-utils xvfb x11vnc python3-pip
+python3 -m pip install --upgrade pip setuptools psutil wheel
+
+#macOS系统
+brew install git python3 cmake sdl2 sdl2_image sdl2_ttf sdl2_gfx boost boost-python3
+
+python3 -m pip install --upgrade pip setuptools psutil wheel
+
+#windows系统
+python -m pip install --upgrade pip setuptools psutil wheel
+```
+
+切换进GF_large目录
+```python
+cd gf_large
+```
+
+进行编译安装
+
+```python
+python3 -m pip install .
+```
+
+检测运行：
+
+```python
+python3 -m gfootball.play_game --action_set=full
+```
