@@ -8,6 +8,17 @@ git clone https://github.com/junmoxiaoDake/large_env.git
 
 安装SMAC_Large步骤：
 ```python
-git clone https://github.com/junmoxiaoDake/large_env.git
+cd smac_large
+```
+切换进smac_large文件夹后，采用下述命令安装smac_large
+
+```python
+pip install -e smac_large/
+```
+
+
+采用下述命令运行smac_large来检测是否安装成功。
+```python
+python -m smac.bin.map_list 
 ```
 
