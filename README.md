@@ -16,6 +16,10 @@ cd smac_large
 pip install -e smac_large/
 ```
 
+需要下载星际争霸Ⅱ的游戏，并且在home目录下的.bashrc里进行配置游戏位置
+```python
+export SC2PATH="/data/zpq/StarCraftII" #其中的/data/zpq/StarCraftII为当前的星际争霸Ⅱ所在的游戏位置。
+```
 
 采用下述命令运行smac_large来检测是否安装成功。
 ```python
