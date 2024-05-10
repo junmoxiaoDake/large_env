@@ -87,7 +87,12 @@ python Forge.py --nRealm 2 --api vecenv #Run 2 environments with vecenv API
 ## 安装Drone_Large步骤：
 依赖包：
 * python==3.6.1
-* gym==0.9.2 (might work with later versions)
-* matplotlib if you would like to produce Ising model figures
+* gym==0.9.2 
+* matplotlib 
 
+构建安装：
 
+```python
+cd drone_large
+./build.sh
+```
