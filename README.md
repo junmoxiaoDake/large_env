@@ -96,3 +96,10 @@ python Forge.py --nRealm 2 --api vecenv #Run 2 environments with vecenv API
 cd drone_large
 ./build.sh
 ```
+
+测试运行：
+```python
+python drone_large/train_pursuit.py --train
+python drone_large/train_gather.py --train
+python drone_large/train_battle.py --train
+```
